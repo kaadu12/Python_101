@@ -4,3 +4,14 @@
 # 3. number of years to invest
 #
 # Calculate the future values and print them to the console.
+
+amount = 1000
+
+interest_rate = .2
+
+number_of_years = 20
+
+for i in range(number_of_years):
+    amount = (amount * interest_rate) + amount
+    print(amount)
+    print(f"You have so much money! You have {amount:.1f}.  It's been {i + 1} years!")
